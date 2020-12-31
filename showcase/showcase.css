@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #FFFFFF;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow-y: scroll;
+     overflow-x: hidden;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    min-height: 100vh;
+    transform-style: inherit;
+    width: 100vw;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color:#FFFFFF;
+  padding: 10px 0px;
+  padding-left:10px;
+   position:fixed;
+   z-index:2;
+ transition: all 0.3s ease;
+ width:100%;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: yellow;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+padding-top:15px;
+  float: right;
+  padding-right:50px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+}
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(front%20page-1.png);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+.logo img{
+width: 150px;
+     height: auto;
+    justify-content: flex-end;
+        display: flex;
+    margin-right: 20px;
+}
+.sticky_header
+{
+ font-size: 17px;
+}
+.image{
+ max-width:100%;
+  width:100%;
+  height:auto%;
+}
+.border {
+  border-bottom: 30px solid;
+  border-image-source: linear-gradient(to right,black ,black);
+  border-image-slice: 1;
+  overflow:hidden;
+}
+
+div.background{
+background-color:#000000;
+}
+div.background p{
+font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+footer{
+background-color:#000000;
+text-align:center;
+padding-top:20px;
+padding-bottom:50px;
+color:#CCCCCC;
+}
